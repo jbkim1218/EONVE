@@ -1,0 +1,12 @@
+node_modules/
+.next/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.env*
+.vercel/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+AGENTS.md
