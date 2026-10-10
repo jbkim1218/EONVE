@@ -1,0 +1,97 @@
+{
+  "environment": "Local Chromium, 1280px / 390px, no CPU or network throttling. Not field Core Web Vitals. INP not measured.",
+  "reports": [
+    {
+      "width": 1280,
+      "route": "/",
+      "metrics": {
+        "lcp": 156,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/women",
+      "metrics": {
+        "lcp": 108,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/products/sculpted-wool-coat",
+      "metrics": {
+        "lcp": 36,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/admin/products/new",
+      "metrics": {
+        "lcp": 56,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "metrics": {
+        "lcp": 112,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/women",
+      "metrics": {
+        "lcp": 40,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/products/sculpted-wool-coat",
+      "metrics": {
+        "lcp": 32,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/admin/products/new",
+      "metrics": {
+        "lcp": 52,
+        "cls": 0
+      },
+      "violations": [],
+      "incomplete": []
+    }
+  ]
+}
