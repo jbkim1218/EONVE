@@ -21,12 +21,6 @@ MEN·WOMEN·NEW 탐색, 조합 필터와 URL 유지, 가격 정렬, Escape와 �
 
 최종 실행: `pnpm test:e2e --project=chromium --project=mobile`과 동등한 Playwright CLI 실행에서 **16 passed (29.7초)**. 테스트의 모바일은 실제 iPhone이 아니라 Chromium의 모바일 viewport 에뮬레이션입니다.
 
-## 쇼핑 동작 수정 검증
-
-개발 서버를 PC LAN 주소 `http://192.0.2.10:3010`(설명용 예시 주소)으로 열었을 때 HMR 연결이 차단되고 하트 버튼을 눌러도 상태가 변하지 않는 것을 재현했습니다. `allowedDevOrigins`에 실행 중인 PC의 IPv4 주소와 `127.0.0.1`을 등록한 뒤 같은 주소에서 하트의 선택 상태와 저장이 정상 작동했습니다. 개발 서버의 LAN 주소를 대상으로 데스크톱·모바일의 쇼핑, 반응형 화면 넘침, 신규 구매 흐름 테스트도 통과했습니다.
-
-장바구니 담기 후 `/cart` 자동 이동, 위시리스트 새로고침 유지·해제, 모든 고객 페이지의 플로팅 메뉴, 맨 위 이동, 옵션 미선택 오류, 바로 구매의 주문 확인·새로고침·주문 확정, 바로 구매 후 기존 장바구니 유지, 장바구니 전체 주문 후 비우기를 E2E로 확인했습니다. 모바일 상품 화면에서 플로팅 메뉴와 하단 구매 버튼의 배치도 캡처로 확인했습니다. 실제 결제는 구현하지 않았습니다.
-
 ## 최초 버전의 접근성 및 성능 관찰
 
 1280×900와 390×900의 Chromium에서 `/`, `/women`, `/products/sculpted-wool-coat`, `/admin/products/new`를 점검했습니다. axe-core의 WCAG 2 A/AA, 2.1 AA, 2.2 AA 태그 점검에서 violations 0입니다. 이미지 배경의 대비처럼 수동 판단이 필요한 incomplete 항목은 [docs/audit.json](docs/audit.json)에 함께 남겼습니다. 자동 검사 통과는 전체 접근성 인증을 의미하지 않습니다.
